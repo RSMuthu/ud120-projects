@@ -22,7 +22,10 @@ from email_preprocess import preprocess
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
-
+from sklearn.naive_bayes import GaussianNB
+clt = GaussianNB()
+clt.fit(features_train, labels_train)
+clt.predict(features_test)
 
 
 #########################################################
