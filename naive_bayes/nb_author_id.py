@@ -25,7 +25,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 from sklearn.naive_bayes import GaussianNB
 clt = GaussianNB()
 clt.fit(features_train, labels_train)
-clt.predict(features_test)
+print(clt.predict(features_test))
 
 
 #########################################################
